@@ -1,10 +1,13 @@
+// Run the script using the following command:
+// node your-script.js
+
 const puppeteer = require('puppeteer');
 const fs = require('fs').promises;
 
 const websiteURLs = [
   {
     url: 'https://zimeras.ca',
-    name: 'hsr-home',
+    name: 'zimeras-home',
   },
   {
     url: 'https://example.com',
@@ -13,6 +16,8 @@ const websiteURLs = [
   // Add more pages as needed
 ];
 
+// Configure the screenshotDirectory variable to specify the directory where the
+// screenshots will be saved.
 const screenshotDirectory = './zimeras/';
 
 (async () => {
